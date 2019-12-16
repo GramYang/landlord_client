@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/endgame"/>
+
+    <TextView
+        android:id="@+id/landlord_win"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/landlord_win"
+        android:textSize="@dimen/text_size_16"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/farmer_win"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/farmer_win"
+        android:textSize="@dimen/text_size_16"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/is_you_win"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/is_you_win"
+        android:textSize="@dimen/text_size_16"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/money_result1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/money_result1"
+        android:textSize="@dimen/text_size_16"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/money_result2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/money_result2"
+        android:textSize="@dimen/text_size_16"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="end"
+        android:text="@string/confirm"
+        android:textSize="@dimen/text_size_16"
+        android:textColor="@color/black"/>
+
+</LinearLayout>

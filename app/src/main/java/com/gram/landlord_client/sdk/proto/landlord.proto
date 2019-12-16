@@ -1,0 +1,48 @@
+syntax = "proto3";
+
+message JsonREQ {
+    int32 JsonType = 1;
+	bytes Content = 2;
+}
+
+message JsonACK{
+    int32 JsonType = 1;
+	bytes Content = 2;
+}
+
+message LoginREQ {
+	string Version = 1;
+	string Platform = 2;
+	bytes TokenReq = 3;
+}
+
+message LoginACK {
+	ResultCode Result = 1;
+	ServerInfo Server = 2;
+	int32 TokenAck = 3;
+	string GameSvcID = 4;
+}
+
+enum ResultCode {
+	NoError = 0;
+	AgentNotFound = 1;
+	AgentAddressError = 2;
+	GameNotFound = 3;
+}
+
+message ServerInfo{
+    string IP = 1;
+    int32 Port = 2;
+}
+
+message PingACK {
+}
+
+message VerifyREQ {
+	string GameToken = 1;
+	string GameSvcID = 2;
+}
+
+message VerifyACK {
+	ResultCode Result = 1;
+}

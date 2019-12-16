@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circle="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="horizontal"
+    android:background="@color/colorPrimary">
+
+    <com.gram.landlord_client.widget.CircleImageView
+        android:id="@+id/user_avatar"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_gravity="start|top"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/ico_user_default"
+        circle:border_color="@android:color/white"
+        circle:border_width="1dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_avatar"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="10dp"
+        android:background="?attr/selectableItemBackground"
+        android:orientation="vertical"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_guest"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_14"/>
+
+        <TextView
+            android:id="@+id/tv_win"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/win"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_14"/>
+
+        <TextView
+            android:id="@+id/tv_lose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lose"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_14"/>
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/money"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_14"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

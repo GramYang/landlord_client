@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_info"
+        android:icon="@mipmap/ic_home_black_24dp"
+        android:title="@string/item_info"/>
+
+    <item
+        android:id="@+id/item_settings"
+        android:icon="@mipmap/ic_settings_black_24dp"
+        android:title="@string/item_settings"/>
+
+</menu>
