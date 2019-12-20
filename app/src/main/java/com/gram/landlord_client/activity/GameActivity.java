@@ -839,6 +839,7 @@ public class GameActivity extends BaseActivity {
         visible(meStatusChoose);
         if (isFirst) {
             gone(meNoAnswer);
+            LandlordUtil.clearDisposables();
             LandlordUtil.addTemporaryDisposable(
                     //倒计时结束，直接出第一张牌
                     Flowable.interval(0, 1, TimeUnit.SECONDS)
@@ -890,6 +891,7 @@ public class GameActivity extends BaseActivity {
         } else {
             //恢复上一盘隐藏的不出选项
             visible(meNoAnswer);
+            LandlordUtil.clearDisposables();
             LandlordUtil.addTemporaryDisposable(
                     //倒计时结束，自动选择不出牌
                     Flowable.interval(0, 1, TimeUnit.SECONDS)
