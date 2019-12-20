@@ -24,7 +24,13 @@
 * 个人写前端没什么设计天赋，页面比较挫。。
 
 # 效果图
-
+![登陆页面](https://github.com/GramYang/landlord_client/blob/master/pictures/Image%201.png)
+![游戏分区](https://github.com/GramYang/landlord_client/blob/master/pictures/Image%202.png)
+![游戏大厅](https://github.com/GramYang/landlord_client/blob/master/pictures/Image%204.png)
+![准备](https://github.com/GramYang/landlord_client/blob/master/pictures/Image%205.png)
+![等待地主出牌](https://github.com/GramYang/landlord_client/blob/master/pictures/Image%206.png)
+![加倍](https://github.com/GramYang/landlord_client/blob/master/pictures/Image%207.png)
+![出牌](https://github.com/GramYang/landlord_client/blob/master/pictures/Image%208.png)
 
 
 # 自定义view
