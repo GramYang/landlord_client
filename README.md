@@ -16,7 +16,7 @@
 <!-- /TOC -->
 
 # 什么是landlord_client
-这是一个斗地主游戏的Android前端demo，对应landlord_go后端。
+这是一个斗地主游戏的Android前端demo，对应[landlord_go](https://github.com/GramYang/landlord_go)后端。
 
 特点
 * 使用原生socket+protobuf与后端通信，轻便简捷。
