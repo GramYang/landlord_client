@@ -606,11 +606,13 @@ public class GameActivity extends BaseActivity {
                 leftCardsOut.addAll(response.getCardsOut());
                 throwCards(false);
                 refreshTopTable(response.getThrowOutCards());
-                rivalRightCardsCount.setText(
+                if(response.getPlayersCardsCount() != null) rivalRightCardsCount.setText(
                         String.format("%s", response.getPlayersCardsCount().get(LandlordUtil.getRightRivalSeatNum(meSeatNum, meTableNum))));
                 if(response.isAllPass()) { //连续两个pass，我出的牌没人要的起
                     gone(meCardsOut);
                     visible(meStatusChoose);
+                    myCardsOut.clear();
+                    myOutAdapter.notifyDataSetChanged();
                     throwCards(true);
                 }
             } else {

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">gram_landlord</string>
+    <string name="app_name">landlord_client</string>
     <string name="username_hint">请输入用户名</string>
     <string name="password_hint">请输入密码</string>
     <string name="login">登录</string>
